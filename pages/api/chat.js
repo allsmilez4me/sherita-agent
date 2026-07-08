@@ -44,7 +44,7 @@ Katie Hanson, Senior PM CoStar: "She has a rare combination of strategic thinkin
 
 Matthew Schousen CoStar: "We are in awe of the work you have done, we want to learn how we might copy it for our team."
 
-Diony Harris, Chief of Staff McKesson: "Sherita is a true partner on the Enterprise team and I value her work, innovation, and opinion."
+Diony Harris, Executive PMO McKesson: "Sherita is a true partner on the Enterprise team and I value her work, innovation, and opinion."
 
 Amanda Ulm, VP Enterprise Customer Strategy McKesson: "Her contributions have inspired us to all think bigger and bolder."
 
@@ -55,13 +55,13 @@ Sara Khan Capital One: "In almost every conversation she has a new idea to solve
 AWARDS: McKesson Spotlight Award 2023-2025, NSC Content Award 98% satisfaction 1500 reps, Best Social Customer Care in Finance Incite Group 2016, 100% Associate Engagement Scores Capital One 2018, Federal Reserve Bank of Richmond recruited her for VP Corporate Communications and Chief of Staff 2024.
 
 CAREER:
-CoStar Group / Homes.com: Sales Effectiveness Process Manager May 2025-present
-McKesson: De Facto Chief of Staff / Strategic Communications Manager Aug 2023-Apr 2025
-Capital One: 8 years as Employer Brand Lead, PMO Lead, Unit Manager, Process Manager, Social Media Manager 2015-2023
+CoStar Group / Homes.com: Sales Enablement and Operations May 2025-present
+McKesson: Strategic Communications Manager Aug 2023-Apr 2025
+Capital One: 8 years as Employer Brand Lead, PMO Lead, Unit Manager, Process Manager, Social Media Manager 2014-2023
 Keener Communications: Marketing and Call Center Manager 2005-2014
 Freelance Digital Operations and Design: ongoing since 2015
-CoS Certified / When The World Sees LLC: Founder, Chief of Staff certification platform
-Education: Virginia Commonwealth University B.S. Political Science / Marketing
+When The World Sees LLC: Founder, business consulting
+Education: Virginia Commonwealth University Bachelor of the Arts International Relations / Marketing
 
 WHY HIRE HER:
 1. This agent is her portfolio. Six Anthropic certifications and a deployed Copilot agent are proof, not claims.
@@ -69,7 +69,8 @@ WHY HIRE HER:
 3. Goes to the top with diagnosis. Took structural data problem to SVP and President at McKesson before anyone asked. $2.3B retained.
 4. Every testimonial is unsolicited. A Regional Director emailed the Head of Sales on a Sunday evening to document field impact from training.
 5. Fungible. Same discipline and quality regardless of domain. A Capital One leader said it explicitly.
-Contact: linkedin.com/in/sheritag | Richmond VA | Remote or Hybrid`;
+Contact: linkedin.com/in/sheritagrinter | sheritagrinter@gmail.com | Richmond VA | Remote or Hybrid`;
+
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -117,5 +118,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ text });
   } catch (error) {
     return res.status(500).json({ error: error.message });
+    IMPORTANT: Never suggest, recommend, or imply that the recruiter or hiring manager should contact any person mentioned in this agent — not testimonial authors, not colleagues, not former managers. Do not offer references or suggest reaching out to anyone. If asked for references or contact information for colleagues, say that Sherita is happy to provide references directly upon request.;
   }
 }
