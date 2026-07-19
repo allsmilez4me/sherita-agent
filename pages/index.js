@@ -22,7 +22,7 @@ const CERTS = [
 ];
 
 const BUILDS = [
-  "Microsoft Copilot enterprise agent — architected from scratch, 80-page knowledge base, 38% adoption vs 40% industry benchmark, tens of thousands of annual interactions",
+  "Microsoft Copilot enterprise agent — architected from scratch, 80-page knowledge base, 38% adoption exceeding the 20-35% industry average",
   "Microsoft Power App for field sales time tracking + PowerBI integration — built and launched June 2026",
   "AI agent for CoS Certified professional certification platform — in development using Claude",
   "Daily Claude and Claude Code workflows for content, analytics, and operational tooling",
@@ -35,6 +35,44 @@ const STATS = [
   ["800", "Reps Enabled"],
   ["6", "Anthropic Certs"],
 ];
+
+// Clean markdown renderer for bot messages
+function renderMessage(text) {
+  const paragraphs = text.split(/\n{2,}/);
+  return paragraphs.map((para, pi) => {
+    const lines = para.split('\n');
+    const isList = lines.every(l => l.trim() === '' || l.trim().startsWith('- ') || l.trim().startsWith('* '));
+    if (isList && lines.some(l => l.trim().startsWith('- ') || l.trim().startsWith('* '))) {
+      return (
+        <ul key={pi} style={{ paddingLeft: 18, margin: pi > 0 ? '10px 0 0' : '0' }}>
+          {lines.filter(l => l.trim().startsWith('- ') || l.trim().startsWith('* ')).map((l, li) => (
+            <li key={li} style={{ marginBottom: 4 }}>{renderInline(l.replace(/^[\-\*]\s+/, ''))}</li>
+          ))}
+        </ul>
+      );
+    }
+    return (
+      <p key={pi} style={{ margin: pi > 0 ? '10px 0 0' : '0', lineHeight: 1.65 }}>
+        {renderInline(para)}
+      </p>
+    );
+  });
+}
+
+function renderInline(text) {
+  const parts = [];
+  const regex = /\*\*(.+?)\*\*|\*(.+?)\*/g;
+  let last = 0;
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > last) parts.push(text.slice(last, match.index));
+    if (match[1]) parts.push(<strong key={match.index}>{match[1]}</strong>);
+    else if (match[2]) parts.push(<em key={match.index}>{match[2]}</em>);
+    last = match.index + match[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length > 0 ? parts : text;
+}
 
 export default function Home() {
   const [msgs, setMsgs] = useState([]);
@@ -62,9 +100,7 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: history }),
       });
-
       const data = await res.json();
-
       if (!res.ok) {
         setErr(data?.error || `Error ${res.status}`);
         setMsgs(msgs);
@@ -75,7 +111,6 @@ export default function Home() {
       setErr('Network error: ' + e.message);
       setMsgs(msgs);
     }
-
     setBusy(false);
   }
 
@@ -89,57 +124,30 @@ export default function Home() {
 
       <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#F8FAFC' }}>
 
-        {/* ── HEADER ── */}
         <header style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%)', padding: '24px 24px 0', color: '#fff' }}>
           <div style={{ maxWidth: 760, margin: '0 auto' }}>
-
-            {/* Name row */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 18 }}>
-              <div style={{
-                width: 50, height: 50, borderRadius: '50%',
-                background: 'linear-gradient(135deg, #4F46E5, #7C3AED)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontWeight: 800, fontSize: 16, flexShrink: 0,
-                boxShadow: '0 4px 14px rgba(79,70,229,0.5)',
-              }}>SG</div>
+              <div style={{ width: 50, height: 50, borderRadius: '50%', background: 'linear-gradient(135deg, #4F46E5, #7C3AED)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 16, flexShrink: 0, boxShadow: '0 4px 14px rgba(79,70,229,0.5)' }}>SG</div>
               <div>
                 <div style={{ fontSize: '1.15rem', fontWeight: 800 }}>Sherita Grinter, PMP</div>
-                <div style={{ fontSize: '0.72rem', color: '#A5B4FC', marginTop: 2 }}>
-                  AI Enablement · Strategic Communications · 21 Years · Richmond, VA
-                </div>
+                <div style={{ fontSize: '0.72rem', color: '#A5B4FC', marginTop: 2 }}>AI Enablement · Strategic Communications · 21 Years · Richmond, VA</div>
               </div>
             </div>
 
-            {/* AI hero panel */}
-            <div style={{
-              background: 'rgba(79,70,229,0.25)',
-              border: '1px solid rgba(165,180,252,0.35)',
-              borderRadius: 12, padding: '16px 18px', marginBottom: 16,
-            }}>
-              <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#818CF8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 6 }}>
-                This agent is her portfolio
-              </div>
+            <div style={{ background: 'rgba(79,70,229,0.25)', border: '1px solid rgba(165,180,252,0.35)', borderRadius: 12, padding: '16px 18px', marginBottom: 16 }}>
+              <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#818CF8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 6 }}>This agent is her portfolio</div>
               <div style={{ fontSize: '0.9rem', fontWeight: 600, color: '#fff', lineHeight: 1.55, marginBottom: 12 }}>
-                Sherita holds 6 Anthropic certifications and builds AI systems in production.
-                The agent you are using right now demonstrates that capability directly.
+                Sherita holds 6 Anthropic certifications and builds AI systems in production. The agent you are using right now demonstrates that capability directly.
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
                 {CERTS.map(c => (
-                  <span key={c} style={{
-                    background: 'rgba(99,102,241,0.3)',
-                    border: '1px solid rgba(165,180,252,0.4)',
-                    borderRadius: 6, padding: '3px 9px',
-                    fontSize: '0.65rem', color: '#C7D2FE', fontWeight: 600,
-                  }}>✓ {c}</span>
+                  <span key={c} style={{ background: 'rgba(99,102,241,0.3)', border: '1px solid rgba(165,180,252,0.4)', borderRadius: 6, padding: '3px 9px', fontSize: '0.65rem', color: '#C7D2FE', fontWeight: 600 }}>✓ {c}</span>
                 ))}
               </div>
             </div>
 
-            {/* AI builds */}
             <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 14, paddingBottom: 18 }}>
-              <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#818CF8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 10 }}>
-                AI systems she has built
-              </div>
+              <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#818CF8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 10 }}>AI systems she has built</div>
               {BUILDS.map((b, i) => (
                 <div key={i} style={{ display: 'flex', gap: 8, marginBottom: 7 }}>
                   <div style={{ width: 5, height: 5, borderRadius: '50%', background: '#4F46E5', marginTop: 6, flexShrink: 0 }} />
@@ -150,14 +158,10 @@ export default function Home() {
           </div>
         </header>
 
-        {/* ── STATS BAR ── */}
         <div style={{ background: '#fff', borderBottom: '1px solid #E5E7EB', padding: '10px 24px' }}>
           <div style={{ maxWidth: 760, margin: '0 auto', display: 'flex', gap: 8, overflowX: 'auto' }}>
             {STATS.map(([n, l]) => (
-              <div key={n} style={{
-                background: '#EEF2FF', border: '1px solid #C7D2FE',
-                borderRadius: 8, padding: '7px 14px', flexShrink: 0, textAlign: 'center',
-              }}>
+              <div key={n} style={{ background: '#EEF2FF', border: '1px solid #C7D2FE', borderRadius: 8, padding: '7px 14px', flexShrink: 0, textAlign: 'center' }}>
                 <div style={{ fontSize: '0.9rem', fontWeight: 800, color: '#4F46E5' }}>{n}</div>
                 <div style={{ fontSize: '0.6rem', color: '#818CF8', whiteSpace: 'nowrap' }}>{l}</div>
               </div>
@@ -165,44 +169,23 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ── CHAT ── */}
         <main style={{ flex: 1, overflowY: 'auto', padding: '18px 24px' }}>
           <div style={{ maxWidth: 760, margin: '0 auto' }}>
 
-            {/* Error */}
             {err && (
-              <div style={{
-                background: '#FEF2F2', border: '1px solid #FECACA',
-                borderRadius: 10, padding: '10px 14px', marginBottom: 14,
-                fontSize: '0.78rem', color: '#991B1B',
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              }}>
+              <div style={{ background: '#FEF2F2', border: '1px solid #FECACA', borderRadius: 10, padding: '10px 14px', marginBottom: 14, fontSize: '0.78rem', color: '#991B1B', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ wordBreak: 'break-all' }}>⚠️ {err}</span>
                 <button onClick={() => setErr(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#991B1B', fontSize: '1.2rem', marginLeft: 8, flexShrink: 0 }}>×</button>
               </div>
             )}
 
-            {/* Welcome */}
             {msgs.length === 0 && (
-              <div style={{
-                background: '#fff', border: '1px solid #E5E7EB',
-                borderRadius: 14, padding: '22px 22px 18px', marginBottom: 14,
-                boxShadow: '0 1px 4px rgba(0,0,0,0.05)',
-              }}>
-                <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>
-                  Ask me anything about Sherita
-                </div>
-                <div style={{ fontSize: '0.82rem', color: '#6B7280', lineHeight: 1.7, marginBottom: 14 }}>
-                  Business impact, AI builds, leadership, testimonials, certifications. Every answer is grounded in documented, verified evidence.
-                </div>
+              <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: 14, padding: '22px 22px 18px', marginBottom: 14, boxShadow: '0 1px 4px rgba(0,0,0,0.05)' }}>
+                <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>Ask me anything about Sherita</div>
+                <div style={{ fontSize: '0.82rem', color: '#6B7280', lineHeight: 1.7, marginBottom: 14 }}>Business impact, AI builds, leadership, testimonials, certifications. Every answer is grounded in documented, verified evidence.</div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {CHIPS.map(c => (
-                    <button key={c} onClick={() => send(c)} style={{
-                      background: '#F9FAFB', border: '1px solid #E5E7EB',
-                      borderRadius: 20, padding: '7px 14px',
-                      fontSize: '0.75rem', color: '#374151',
-                      cursor: 'pointer', fontWeight: 500,
-                    }}
+                    <button key={c} onClick={() => send(c)} style={{ background: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: 20, padding: '7px 14px', fontSize: '0.75rem', color: '#374151', cursor: 'pointer', fontWeight: 500 }}
                       onMouseEnter={e => { e.currentTarget.style.background = '#EEF2FF'; e.currentTarget.style.color = '#4F46E5'; }}
                       onMouseLeave={e => { e.currentTarget.style.background = '#F9FAFB'; e.currentTarget.style.color = '#374151'; }}
                     >{c}</button>
@@ -211,68 +194,44 @@ export default function Home() {
               </div>
             )}
 
-            {/* Messages */}
             {msgs.map((m, i) => (
-              <div key={i} style={{
-                display: 'flex',
-                flexDirection: m.role === 'user' ? 'row-reverse' : 'row',
-                gap: 10, marginBottom: 14, alignItems: 'flex-start',
-              }}>
+              <div key={i} style={{ display: 'flex', flexDirection: m.role === 'user' ? 'row-reverse' : 'row', gap: 10, marginBottom: 16, alignItems: 'flex-start' }}>
                 {m.role === 'assistant' && (
-                  <div style={{
-                    width: 34, height: 34, borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #4F46E5, #7C3AED)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    color: '#fff', fontWeight: 800, fontSize: 11,
-                    flexShrink: 0, marginTop: 2,
-                  }}>SG</div>
+                  <div style={{ width: 34, height: 34, borderRadius: '50%', background: 'linear-gradient(135deg, #4F46E5, #7C3AED)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 800, fontSize: 11, flexShrink: 0, marginTop: 2 }}>SG</div>
                 )}
                 <div style={{
                   maxWidth: '80%',
                   background: m.role === 'user' ? 'linear-gradient(135deg, #4F46E5, #7C3AED)' : '#fff',
                   border: m.role === 'user' ? 'none' : '1px solid #E5E7EB',
                   borderRadius: m.role === 'user' ? '18px 4px 18px 18px' : '4px 18px 18px 18px',
-                  padding: '12px 16px', fontSize: '0.875rem', lineHeight: 1.65,
+                  padding: '13px 16px',
+                  fontSize: '0.875rem',
                   color: m.role === 'user' ? '#fff' : '#111827',
                   boxShadow: m.role === 'user' ? '0 2px 8px rgba(79,70,229,0.25)' : '0 1px 4px rgba(0,0,0,0.06)',
-                  whiteSpace: 'pre-wrap',
-                }}>{m.content}</div>
+                }}>
+                  {m.role === 'user'
+                    ? <p style={{ margin: 0, lineHeight: 1.65 }}>{m.content}</p>
+                    : <div style={{ fontSize: '0.875rem' }}>{renderMessage(m.content)}</div>
+                  }
+                </div>
               </div>
             ))}
 
-            {/* Typing */}
             {busy && (
               <div style={{ display: 'flex', gap: 10, marginBottom: 14 }}>
-                <div style={{
-                  width: 34, height: 34, borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #4F46E5, #7C3AED)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: '#fff', fontWeight: 800, fontSize: 11,
-                }}>SG</div>
-                <div style={{
-                  background: '#fff', border: '1px solid #E5E7EB',
-                  borderRadius: '4px 18px 18px 18px',
-                  padding: '14px 18px', display: 'flex', gap: 5,
-                }}>
+                <div style={{ width: 34, height: 34, borderRadius: '50%', background: 'linear-gradient(135deg, #4F46E5, #7C3AED)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 800, fontSize: 11 }}>SG</div>
+                <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '4px 18px 18px 18px', padding: '14px 18px', display: 'flex', gap: 5, alignItems: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.06)' }}>
                   {[0, 1, 2].map(i => (
-                    <div key={i} style={{
-                      width: 7, height: 7, borderRadius: '50%', background: '#A5B4FC',
-                      animation: `bounce 1.2s ease-in-out ${i * 0.18}s infinite`,
-                    }} />
+                    <div key={i} style={{ width: 7, height: 7, borderRadius: '50%', background: '#A5B4FC', animation: `bounce 1.2s ease-in-out ${i * 0.18}s infinite` }} />
                   ))}
                 </div>
               </div>
             )}
 
-            {/* Follow-up chips */}
             {msgs.length > 0 && !busy && msgs.length < 12 && (
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7, marginBottom: 14, paddingLeft: 44 }}>
                 {CHIPS.filter(c => !msgs.some(m => m.content === c)).slice(0, 3).map(c => (
-                  <button key={c} onClick={() => send(c)} style={{
-                    background: '#F9FAFB', border: '1px solid #E5E7EB',
-                    borderRadius: 16, padding: '5px 12px',
-                    fontSize: '0.72rem', color: '#6B7280', cursor: 'pointer',
-                  }}
+                  <button key={c} onClick={() => send(c)} style={{ background: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: 16, padding: '5px 12px', fontSize: '0.72rem', color: '#6B7280', cursor: 'pointer' }}
                     onMouseEnter={e => { e.currentTarget.style.background = '#EEF2FF'; e.currentTarget.style.color = '#4F46E5'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = '#F9FAFB'; e.currentTarget.style.color = '#6B7280'; }}
                   >{c}</button>
@@ -284,7 +243,6 @@ export default function Home() {
           </div>
         </main>
 
-        {/* ── INPUT ── */}
         <footer style={{ background: '#fff', borderTop: '1px solid #E5E7EB', padding: '14px 24px 18px' }}>
           <div style={{ maxWidth: 760, margin: '0 auto' }}>
             <div style={{ display: 'flex', gap: 10 }}>
@@ -293,33 +251,25 @@ export default function Home() {
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } }}
                 placeholder="Ask about AI skills, business impact, leadership, or fit for your role…"
-                style={{
-                  flex: 1, border: '1.5px solid #E5E7EB', borderRadius: 12,
-                  padding: '11px 16px', fontSize: '0.875rem', color: '#111827',
-                  outline: 'none', background: '#F9FAFB',
-                }}
+                style={{ flex: 1, border: '1.5px solid #E5E7EB', borderRadius: 12, padding: '11px 16px', fontSize: '0.875rem', color: '#111827', outline: 'none', background: '#F9FAFB' }}
                 onFocus={e => { e.target.style.borderColor = '#4F46E5'; e.target.style.background = '#fff'; }}
                 onBlur={e => { e.target.style.borderColor = '#E5E7EB'; e.target.style.background = '#F9FAFB'; }}
               />
-              <button
-                onClick={() => send()}
-                disabled={busy || !input.trim()}
-                style={{
-                  background: input.trim() && !busy ? 'linear-gradient(135deg, #4F46E5, #7C3AED)' : '#E5E7EB',
-                  border: 'none', borderRadius: 12, padding: '11px 22px',
-                  color: input.trim() && !busy ? '#fff' : '#9CA3AF',
-                  fontWeight: 600, fontSize: '0.875rem',
-                  cursor: input.trim() && !busy ? 'pointer' : 'not-allowed',
-                  whiteSpace: 'nowrap',
-                }}
-              >Send →</button>
+              <button onClick={() => send()} disabled={busy || !input.trim()} style={{ background: input.trim() && !busy ? 'linear-gradient(135deg, #4F46E5, #7C3AED)' : '#E5E7EB', border: 'none', borderRadius: 12, padding: '11px 22px', color: input.trim() && !busy ? '#fff' : '#9CA3AF', fontWeight: 600, fontSize: '0.875rem', cursor: input.trim() && !busy ? 'pointer' : 'not-allowed', whiteSpace: 'nowrap' }}>Send →</button>
             </div>
-            <div style={{ textAlign: 'center', fontSize: '0.65rem', color: '#D1D5DB', marginTop: 8 }}>
-              Powered by Claude · Built by Sherita Grinter, PMP
-            </div>
+            <div style={{ textAlign: 'center', fontSize: '0.65rem', color: '#D1D5DB', marginTop: 8 }}>Powered by Claude · Built by Sherita Grinter, PMP</div>
           </div>
         </footer>
       </div>
+
+      <style>{`
+        @keyframes bounce { 0%,80%,100%{transform:translateY(0);opacity:.4} 40%{transform:translateY(-5px);opacity:1} }
+        input::placeholder{color:#9CA3AF;}
+        *{box-sizing:border-box;}
+        ::-webkit-scrollbar{width:5px;}
+        ::-webkit-scrollbar-thumb{background:#E5E7EB;border-radius:3px;}
+        ul{list-style-type:disc;}
+      `}</style>
     </>
   );
 }
