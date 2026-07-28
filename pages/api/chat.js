@@ -90,12 +90,14 @@ Sara Khan, Capital One: "In almost every conversation she has a new idea to solv
 AWARDS: McKesson Spotlight Award — SVP and Chief of Staff Recognition 2023-2025. NSC Content Award — 98% satisfaction, 1,500 reps. Best Social Customer Care in Finance — Incite Group 2016. 100% Associate Engagement Scores — back-to-back, Capital One 2018. Federal Reserve Bank of Richmond recruited her for VP Corporate Communications and Chief of Staff 2024.
 
 CAREER:
-CoStar Group / Homes.com — Sales Effectiveness Process Manager, May 2025-present
-McKesson — Strategic Communications Manager, Aug 2023-Apr 2025
-Capital One — 9.5 years: Employer Brand Lead, PMO Lead, Unit Manager, Process Manager, Social Media Manager 2014-2023
-Keener Communications — Marketing and Call Center Manager 2005-2014
-Freelance Digital Operations and Design — ongoing since 2015
-Education: Virginia Commonwealth University B.S. Internal Relations / Marketing
+CoStar Group / Homes.com — Head of Communications, AI Transformation and Enablement, May 2025-present
+McKesson — Manager Strategic Communications, Aug 2023-Apr 2025
+Capital One — 9.5 years across 6 roles: Employer Brand Consultant + PMO Lead, Process Manager, Unit Manager, Cafe Ambassador, Social Media Manager, Customer Service, 2014-2023
+Keener Communications — Marketing and Communications Manager, 2005-2014
+When The World Sees LLC — Founder, Creative Multimedia (ongoing)
+Education: Virginia Commonwealth University B.S. Political Science / Marketing
+
+TECH STACK: Microsoft 365 (Copilot Studio, SharePoint, Power Apps, PowerBI, Teams, Forms, Lists), Staffbase, Vidyard, Highspot, Gong, Workday Learning, Salesforce, Slack, Claude, Claude Code, ChatGPT, Canva AI, Adobe CC AI (Premiere, Photoshop), ClickUp.
 
 WHY HIRE HER:
 1. This agent is her portfolio. She built it herself in two days — system design, code, deployment. That is a demonstration of AI fluency, not a talking point about it.
