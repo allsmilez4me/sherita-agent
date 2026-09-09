@@ -163,8 +163,6 @@ Diony, Executive PMO, McKesson Enterprise: "Sherita is a true partner on the Ent
 
 Amanda, VP Enterprise Customer Strategy, McKesson: "Her contributions have inspired us to all think bigger and bolder."
 
-Lisa, Capital One: "I do not have any areas of improvement except that we need a clone for her."
-
 Sara, Capital One: "In almost every conversation she has a new idea to solve a problem or make a process smoother."
 
 AWARDS: McKesson Spotlight Award — SVP and Chief of Staff Recognition 2023-2025. NSC Content Award — 98% satisfaction, 1,500 reps. Best Social Customer Care in Finance — Incite Group 2016. 100% Associate Engagement Scores — back-to-back, Capital One 2018. Federal Reserve Bank of Richmond recruited her for VP Corporate Communications and Chief of Staff 2024.
