@@ -45,7 +45,7 @@ Sr Sales Strategic Operations, Communications & Knowledge Management (AI Enablem
 - Senior Director of Finance: "Just now having a chance to review — love it! Incredible work."
 - Currently building: an AI agent that ingests screenshots, JPGs, and PPTs, maps assets to exact placement in target decks, and will auto-generate sales presentations for 800 reps who currently spend 3 hours per deck manually — projected to recover ~2,400 hours per cycle
 
-MCKESSON (Aug 2023 - May 2025) | Strategic Operations and Communications Manager
+MCKESSON (Aug 2023 - May 2025) | Strategic Communications Manager, Strategy & Marketing | Program Manager
 Fortune 8 company. She served as the operational integration leader across five healthcare business lines without direct authority over any of them.
 
 WIN ROOM — $2.3B Account Retention:
@@ -82,7 +82,7 @@ KEY STORIES:
 
 Project Manager: "I don't have any areas of improvement except that we need a clone for her. Sherita embodies all of Capital One's competencies."
 
-KEENER COMMUNICATIONS (Apr 2005 - Feb 2014)
+KEENER COMMUNICATIONS (Apr 2005 - Feb 2014) Five progressive roles over 9.5 years
 8 years at a professional services firm before the Fortune-level career. Built operational frameworks and established the firm's first $1M client relationship.
 
 AWARDS AND RECOGNITION
