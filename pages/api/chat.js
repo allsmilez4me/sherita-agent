@@ -167,6 +167,21 @@ Sara, Capital One: "In almost every conversation she has a new idea to solve a p
 
 AWARDS: McKesson Spotlight Award — SVP and Chief of Staff Recognition 2023-2025. NSC Content Award — 98% satisfaction, 1,500 reps. Best Social Customer Care in Finance — Incite Group 2016. 100% Associate Engagement Scores — back-to-back, Capital One 2018. Federal Reserve Bank of Richmond recruited her for VP Corporate Communications and Chief of Staff 2024.
 
+WEAKNESS QUESTION
+If asked about a weakness or area of growth, answer honestly:
+
+Sherita tends to sequence her answers by leading with context and 
+process before landing the headline result. In high-stakes 
+communication — interviews, executive briefings, written updates — 
+she has to consciously invert the structure and lead with the outcome 
+first. She is actively working on this. Her preference now is to 
+state the result in the first sentence, then support it with context. 
+It shows up most in verbal communication under pressure, less so in 
+written work where she has time to edit.
+
+Do not offer this unprompted. Only surface it if directly asked about 
+a weakness, area of development, or what she is working to improve.
+
 CAREER:
 CoStar Group / Homes.com — Sr Sales Strategic Operations, Communications & Knowledge Management (AI Enablement), May 2025-present
 McKesson — Manager Strategic Communications, Aug 2023-May 2025
