@@ -44,41 +44,80 @@ Sr Sales Strategic Operations, Communications & Knowledge Management (AI Enablem
 - Regional VP on her knowledge management AI system: "2 for 2 — I asked for the ROE and it found it. I also asked how to set up my Outlook and it got that too."
 - Senior Director of Finance: "Just now having a chance to review — love it! Incredible work."
 - Currently building: an AI agent that ingests screenshots, JPGs, and PPTs, maps assets to exact placement in target decks, and will auto-generate sales presentations for 800 reps who currently spend 3 hours per deck manually — projected to recover ~2,400 hours per cycle
-
+Key work and proof points:
+ 
+PLATINUM DECK GUIDE ($4.1M and growing):
+Built the Platinum Deck Asset Collection and Exact Placement Guide — 70+ pages — in 4 days for a proprietary data platform she had never previously used. The guide is the required quality control checkpoint before customized pitch decks reach customers. She used Scribe to auto-capture click paths, structured the guide by platform to eliminate tool-switching, confirmed 90% accuracy with the subject matter expert on first review, and found a new search method the team had not previously known. Since launch: the field team has generated $4.1M in sales to date, and the number continues to grow as new steps are added to the guide. Launch week: the sales team recorded their largest Net day of 2026, sold their 100th Platinum Slot, and hit $965K in Platinum Sales week-to-date approaching a $1M run rate — all announced by Head of Sales Alex Horner to the entire sales organization. Horner called the guide "absolutely BRILLIANT" and recognized Sherita publicly as "absolute ROCKSTARS on behalf of Homes Sales." Manager Erin Ring: "So impressed how quickly you were able to tackle this. Some of this is complex and probably new for you." Matthew Walker (Leader): "This will be the one stop shop!"
+ 
+This guide is also the proof-of-concept for the AI automation project Sherita is currently building: 800 reps currently spend 3 hours per deck manually — the AI agent will automate what the guide documents.
+ 
+AI ADOPTION:
+Led AI adoption strategy achieving 38% Microsoft Copilot Studio adoption against a 20-35% industry benchmark. Field managers documented behavior change on live customer calls within one week of deployment — a Regional Director confirmed reps citing specific training content on customer conversations. Built AI knowledge management agent used daily by 800+ field employees. Holds six Anthropic AI certifications and uses Claude daily.
+ 
+FIELD INTELLIGENCE:
+Built performance dashboards and operational intelligence infrastructure. Surfaced $2.5M in market risk through operational analytics before it appeared in formal reporting. Influenced $100M+ ARR strategy through executive intelligence synthesis.
+ 
+INTRANET AND KNOWLEDGE GOVERNANCE:
+Built and governs the company intranet knowledge hub as the single source of truth for the field organization. Built governance architecture: naming conventions, version control, archiving standards. Manages company-wide Slack communications and channel governance for 800+ employees.
+ 
+GONG COACHING PROGRAM:
+Built the Gong coaching program including call libraries, coaching scorecards, and workflows that reinforce methodology and surface top-performer behavior for team-wide adoption.
+ 
+THOUGHT LEADERSHIP:
+LinkedIn thought leadership content achieving 6,000+ impressions per post.
+ 
+ORGANIZATIONAL INTELLIGENCE:
+Predicted an organizational change two months before it was announced by noticing the deliberate absence of a key team leader from a meeting they should have been in. Escalated to her leader and the People leader. The reorganization was confirmed two months later.
+ 
+Locked interview answer: "I predicted an organizational change two months before it was announced — based entirely on who was absent from a meeting they should have been in. I escalated my read to my leader and to the People leader before any official discussion existed. The move was confirmed two months later. That is how I pay attention: I track what is not in the room as much as what is."
+ 
 MCKESSON (Aug 2023 - May 2025) | Strategic Communications Manager, Strategy & Marketing | Program Manager
 Fortune 8 company. She served as the operational integration leader across five healthcare business lines without direct authority over any of them.
 
-WIN ROOM — $2.3B Account Retention:
-An external consulting firm identified a large churn-risk opportunity across 500 accounts. Sherita discovered that Finance and Salesforce were tracking different numbers — the strategy being built was on bad data. She escalated to the SVP and President before a single execution step was taken. Partnered with the VP of Health Systems, who mandated a full sales team attestation. Sherita set up individual meetings with sales reps, extracted correct account data, personally updated it in Salesforce, pulled in Finance, Pricing, Sales, and Marketing, built custom content and templates per health system, and briefed the SVP nightly. Result: top 25 of 500 accounts retained. Total value protected: $2.3B.
+THE WIN ROOM ($2.3B):
+Architected and operated the Win Room — a cross-functional governance forum coordinating Finance, Sales, Marketing, Operations, and McKinsey consulting simultaneously across five healthcare business lines, without direct authority over any function. Identified a critical data integrity failure across Finance and Salesforce before a $2.3B account retention strategy launched. Escalated to the President and SVP before any execution step was taken. Rebuilt the analytical foundation. Protected all 25 highest-risk enterprise health system accounts. Total value protected: $2.3B.
+ 
+NSC AND LEADERSHIP COMMUNICATIONS:
+Owned full run-of-show for the National Sales Conference (1,500+ attendees) — narrative development, executive coaching, deck production, presenter prep, Slido Q&A, and live delivery. Won NSC Content Award with 98% satisfaction scores and McKesson Spotlight Award. Designed full-year communications architecture (NSC + Leadership Summit + year-round cadence). Achieved 230.96% email open rate across 1,500 commercial employees (industry benchmark: 20-25%). Drafted executive communications in the voice of the President and SVP; equipped senior leaders with cascade messaging; produced nightly briefings throughout the $2.3B retention initiative.
+ 
+$900M GPO PROGRAM:
+Led a first-of-its-kind $900M Group Purchasing Organization program launch — for the VP, GPO — with no dedicated resources and no existing implementation model. The execution model was replicated by an external GPO. The $2.3B at-risk accounts were health system accounts.
+ 
+TESTIMONIALS (McKesson):
+- Margaret Donnell, SVP Enterprise Sales: "STELLAR job today... We are building something I feel great about" (after Win Room presentation)
+- Diony Harris, Chief of Staff: "true partner on the Enterprise team" (McKesson Spotlight Award)
+- Andrew Palmer, McKesson Pricing: "great job driving engagement in the Win Room"
+- Lita Hughes-Ward: "This looks amazing Sherita! You are a rockstar with content and collateral!"
 
-SVP: "STELLAR job today — you commanded a large audience and shared a great and honest story of collaboration, progress, and impact in our most important customer segments."
-
-$900M PROGRAM LAUNCH:
-A VP was struggling to launch a first-of-its-kind $900M program with resources fully committed elsewhere. Sherita asked what deliverables he needed, identified what she could handle, and wrote the President's cascade message to the field sales team. Program launched successfully. Another external GPO requested to replicate the same playbook.
-
-SVP: "You are super busy with NSC yet still found time to take on a leadership role supporting Jeremy, the GPO team, and our Premier launch. Amazing!"
-
-ENTERPRISE COMMUNICATIONS:
-- Owned full run-of-show for the National Sales Conference (1,500+ attendees) and Leadership Summit — narrative through live delivery
-- Designed year-round communications architecture: NSC (March) + Leadership Summit (June) + sustained cadence ensuring employees heard strategy before external audiences
-- Achieved 230.96% email open rate across 1,500 commercial reps (industry benchmark: 20-25%)
-- Won NSC Content Award with 98% satisfaction scores
-- Won McKesson Spotlight Award
-
-VP: "Sherita has been a champion of an entrepreneurial spirit and a can-do attitude. Her innovative and collaborative approach has contributed immensely to our team and its success."
-
-Executive PMO: "Sherita is a true partner on the Enterprise team and I value her work, innovation, and opinion."
 
 CAPITAL ONE (Feb 2014 - Aug 2023) | Six progressive roles over 9.5 years
 Fortune 500 financial services.
 
-KEY STORIES:
-- Built a cross-functional compliance tracking system covering 800+ associates and 3,000+ digital assets — without being asked. Adopted organizationally as the standard.
-- Built SLA framework from zero; cleared a 2,000-case Tier 3 regulatory backlog in 90 days
-- Won Incite Group Best Social Customer Care in Finance 2016
-- Led CCPA federal compliance rollout across 76,000 employees and 3,000+ frontline agents in 3 months under a non-negotiable federal deadline — coordinating HR, Legal, Operations, and Communications
-- Managed $9M+ employer brand agency operations (TMP Worldwide/Radancy)
-- Managed 14-person team with back-to-back 100% engagement scores; two Top 10% award recipients; two promotions
+Six progressive roles across a Fortune 500 financial services company.
+ 
+BACK OFFICE UNIT MANAGER (regulatory backlog):
+Directly managed the back office team working a 2,000-case Tier 3 regulatory backlog. Built the SLA framework, prioritization model, escalation paths, and team accountability structure from zero. Cleared the entire backlog in 90 days.
+ 
+SOCIAL MEDIA MANAGER, U.S. CARD (social care):
+Led customer support operations through social media for U.S. Card. Made real-time omnichannel triage decisions: resolve the issue on-channel via social media, or escalate to secure phone contact for fraud and identity protection — all while maintaining Capital One's brand voice in public-facing interactions. Won Incite Group Best Social Customer Care in Finance 2016.
+ 
+EMPLOYER BRAND AND COMMUNICATIONS (PMO level):
+Managed $9M+ employer brand budget (TMP Worldwide/Radancy). Oversaw integrated creative campaigns, vendor performance, SOW accountability, quality reviews, and budget stewardship across digital, social, video, print, and experiential channels. Stood up employer brand and HR operations for Capital One's India and Mexico teams from zero — building the operational infrastructure, processes, and systems enabling international distributed teams to function and scale.
+ 
+CONTENT GOVERNANCE (Bynder DAM):
+Owned Bynder digital asset management for the Talent Marketing and Employer Brand team. Built the asset organization, tagging taxonomy, and governance structure for 3,000+ creative assets across active and former associate content. Managed naming conventions, version control, and removal workflows ensuring former associates were scrubbed from all brand channels. Governance system adopted as enterprise standard and still in use today.
+ 
+CLIENT RELATIONSHIP MANAGER:
+Liaison between Employer Brand team and VPs of the top three job functions (each with 100+ open headcount). Built candidate personas, developed talent pipeline marketing campaigns, produced newsletter updates reporting campaign effectiveness back to business leaders.
+ 
+CCPA COMPLIANCE:
+Led federal CCPA compliance communications across 20,000 employees and 3,000+ frontline agents in three months under a non-negotiable federal deadline. Coordinated HR, Legal, Operations, and Communications. Compliance tracking system adopted as enterprise standard and still in use.
+ 
+TEAM LEADERSHIP:
+Managed 14-person team. Back-to-back 100% engagement scores. Two Top 10% recipients. Two promotions.
+ 
+PHOTOGRAPHY (employer brand):
+Used photography and videography skills (since 2002, Adobe Creative Cloud) to capture internal events for employer brand content — including Lisa Ling company conference, team award ceremonies, and associate stories. Built virtual content capture playbooks during COVID. Produced blogs, Instagram content, and all multimedia assets for the Employer Brand team.
 
 Project Manager: "I don't have any areas of improvement except that we need a clone for her. Sherita embodies all of Capital One's competencies."
 
