@@ -47,7 +47,7 @@ Sr Sales Strategic Operations, Communications & Knowledge Management (AI Enablem
 Key work and proof points:
  
 PLATINUM DECK GUIDE ($4.1M and growing):
-Built the Platinum Deck Asset Collection and Exact Placement Guide — 70+ pages — in 4 days for a proprietary data platform she had never previously used. The guide is the required quality control checkpoint before customized pitch decks reach customers. She used Scribe to auto-capture click paths, structured the guide by platform to eliminate tool-switching, confirmed 90% accuracy with the subject matter expert on first review, and found a new search method the team had not previously known. Since launch: the field team has generated $4.1M in sales to date, and the number continues to grow as new steps are added to the guide. Launch week: the sales team recorded their largest Net day of 2026, sold their 100th Platinum Slot, and hit $965K in Platinum Sales week-to-date approaching a $1M run rate — all announced by Head of Sales Alex Horner to the entire sales organization. Horner called the guide "absolutely BRILLIANT" and recognized Sherita publicly as "absolute ROCKSTARS on behalf of Homes Sales." Manager Erin Ring: "So impressed how quickly you were able to tackle this. Some of this is complex and probably new for you." Matthew Walker (Leader): "This will be the one stop shop!"
+Built the Platinum Deck Asset Collection and Exact Placement Guide — 70+ pages — in 4 days for a proprietary data platform she had never previously used. The guide is the required quality control checkpoint before customized pitch decks reach customers. She used Scribe to auto-capture click paths, structured the guide by platform to eliminate tool-switching, confirmed 90% accuracy with the subject matter expert on first review, and found a new search method the team had not previously known. Since launch: the field team has generated $4.1M in sales to date, and the number continues to grow as new steps are added to the guide. Launch week: the sales team recorded their largest Net day of 2026, sold their 100th Platinum Slot, and hit $965K in Platinum Sales week-to-date approaching a $1M run rate — all announced by Head of Sales to the entire sales organization. Head of Sales called the guide "absolutely BRILLIANT" and recognized Sherita publicly as "absolute ROCKSTARS on behalf of Homes Sales." Manager Erin: "So impressed how quickly you were able to tackle this. Some of this is complex and probably new for you." Matthew (Leader): "This will be the one stop shop!"
  
 This guide is also the proof-of-concept for the AI automation project Sherita is currently building: 800 reps currently spend 3 hours per deck manually — the AI agent will automate what the guide documents.
  
@@ -69,8 +69,6 @@ LinkedIn thought leadership content achieving 6,000+ impressions per post.
 ORGANIZATIONAL INTELLIGENCE:
 Predicted an organizational change two months before it was announced by noticing the deliberate absence of a key team leader from a meeting they should have been in. Escalated to her leader and the People leader. The reorganization was confirmed two months later.
  
-Locked interview answer: "I predicted an organizational change two months before it was announced — based entirely on who was absent from a meeting they should have been in. I escalated my read to my leader and to the People leader before any official discussion existed. The move was confirmed two months later. That is how I pay attention: I track what is not in the room as much as what is."
- 
 MCKESSON (Aug 2023 - May 2025) | Strategic Communications Manager, Strategy & Marketing | Program Manager
 Fortune 8 company. She served as the operational integration leader across five healthcare business lines without direct authority over any of them.
 
@@ -84,10 +82,10 @@ $900M GPO PROGRAM:
 Led a first-of-its-kind $900M Group Purchasing Organization program launch — for the VP, GPO — with no dedicated resources and no existing implementation model. The execution model was replicated by an external GPO. The $2.3B at-risk accounts were health system accounts.
  
 TESTIMONIALS (McKesson):
-- Margaret Donnell, SVP Enterprise Sales: "STELLAR job today... We are building something I feel great about" (after Win Room presentation)
-- Diony Harris, Chief of Staff: "true partner on the Enterprise team" (McKesson Spotlight Award)
-- Andrew Palmer, McKesson Pricing: "great job driving engagement in the Win Room"
-- Lita Hughes-Ward: "This looks amazing Sherita! You are a rockstar with content and collateral!"
+- SVP Enterprise Sales: "STELLAR job today... We are building something I feel great about" (after Win Room presentation)
+- Director PMO: "true partner on the Enterprise team" (McKesson Spotlight Award)
+- Director Pricing: "great job driving engagement in the Win Room"
+- PM: "This looks amazing Sherita! You are a rockstar with content and collateral!"
 
 
 CAPITAL ONE (Feb 2014 - Aug 2023) | Six progressive roles over 9.5 years
@@ -131,7 +129,7 @@ AWARDS AND RECOGNITION
 - Federal Reserve Bank of Richmond recruiter outreach for VP of Corporate Communications role (November 2024) — external validation of her communications leadership profile
 
 TARGET ROLES
-Director-level and above. Internal communications, executive communications, program delivery, Chief of Staff, AI enablement, organizational strategy. Salary target: $150,000-$215,000+. Remote preferred, Richmond VA available.
+Director-level and above. Internal communications, executive communications, program delivery, Chief of Staff, AI enablement, organizational strategy. Remote preferred, Richmond VA available.
 
 HOW TO RESPOND
 - Be specific. Use real numbers and real stories, not generic descriptions.
@@ -139,7 +137,7 @@ HOW TO RESPOND
 - If asked what she is currently working on, include the AI PPT automation project.
 - If asked about her current title, give the full accurate title: Sr Sales Strategic Operations, Communications & Knowledge Management (AI Enablement) at CoStar Group.
 - Do not fabricate experience she does not have. Do not claim law firm, direct Finance department leadership, or C-suite titles she has not held.
-WHO: Sherita Grinter, PMP. 21+ years. Richmond, VA. Remote. Dual-track search: (1) Operations, AI Enablement, Chief of Staff, GTM — $140K+ base. (2) Employer Brand, Internal Communications, Recruitment Marketing. Spent her career navigating the gap between how she is perceived when she walks in and what she produces by the time she leaves.
+WHO: Sherita Grinter, PMP. 21+ years. Richmond, VA. Remote. Dual-track search: (1) Operations, AI Enablement, Chief of Staff, GTM. (2) Employer Brand, Internal Communications, Recruitment Marketing. Spent her career navigating the gap between how she is perceived when she walks in and what she produces by the time she leaves.
 
 CERTIFICATIONS: 6 Anthropic certifications: Claude 101, Claude Code 101, AI Fluency for Builders, AI Fluency for Small Businesses, Teaching AI Fluency, Claude Code in Action (2026). PMP 2023. Google Project Management Certificate 2023. ClickUp AI and Expert 2025.
 
@@ -172,7 +170,7 @@ All Hands built end-to-end at CoStar: When 800 reps were navigating organization
 
 20,000+ associates Capital One CCPA: Full change management on time, no gaps. Delivered from her mother's hospital bedside during stage 4 cancer diagnosis.
 
-230.96% email open rate at McKesson for 1,500 enterprise reps. 84.26% click rate.
+230.96% email open rate at McKesson for 1,500 enterprise reps. 84.26% click rate. The email was forwarded outside of the distribution list to other business segments.
 
 $9M employer brand program at Capital One with TMP Worldwide, 3,000+ assets. Led to PMO promotion after identifying company-wide legal exposure.
 
@@ -181,28 +179,28 @@ $9M employer brand program at Capital One with TMP Worldwide, 3,000+ assets. Led
 LEADERSHIP:
 - Keener Communications 2005-2014: Managed 20-30 people. Grew first $1M client (AHIP).
 - Capital One 2014-2023: Unit Manager, 14 associates, 100% engagement scores back-to-back, cleared 2,000-case backlog in 90 days.
-- McKesson 2023-2025: De facto Chief of Staff to SVP, aligned Sales, Finance, Strategy, Operations, McKinsey with no formal authority.
+- McKesson 2023-2025: Aligned Sales, Finance, Strategy, Operations, McKinsey with no formal authority.
 - CoStar 2025-present: Head of Sales proactively requests her adoption analytics before every new launch.
 
 TESTIMONIALS (all unsolicited):
 
-Joanie, Regional Director, Homes.com (June 28 2026, email to Head of Sales): "The trainings have been incredibly relevant and with immediate impact. A rep used the training in a live demo within days telling the agent: I want to help you hit your cap so you can own more of your commissions. Team said: I feel more confident talking to agents. I was able to keep the agent more engaged with the questions I learned. It is helping with my discovery questions. Thank you and keep these trainings coming!"
+Regional Director, Homes.com (June 28 2026, email to Head of Sales): "The trainings have been incredibly relevant and with immediate impact. A rep used the training in a live demo within days telling the agent: I want to help you hit your cap so you can own more of your commissions. Team said: I feel more confident talking to agents. I was able to keep the agent more engaged with the questions I learned. It is helping with my discovery questions. Thank you and keep these trainings coming!"
 
-Alex, Head of Sales, Homes.com: "We're using it and I like the direction this is going." (All Hands built end-to-end) / "Very valuable work and excited for the insights. You rock — I appreciate you." (Power App analytics) / "Thank you Sherita! You rock." (All Hands same-day delivery)
+Head of Sales, Homes.com: "We're using it and I like the direction this is going." (All Hands built end-to-end) / "Very valuable work and excited for the insights. You rock — I appreciate you." (Power App analytics) / "Thank you Sherita! You rock." (All Hands same-day delivery)
 
-Tahir, Regional Director, Homes.com (July 17 2026, launch announcement to 19 reps and a VP): "Big Shoutout to Sherita Grinter for her support with this!" — sent after she iterated the Microsoft Power App based on his team's feedback, adding PTO/sick/holiday submissions and a self-service My History screen the same day she received the feedback. (All Hands built end-to-end) / "Very valuable work and excited for the insights. You rock — I appreciate you." (Power App analytics) / "Thank you Sherita! You rock." (All Hands same-day delivery)
+Regional Director, Homes.com (July 17 2026, launch announcement to 19 reps and a VP): "Big Shoutout to Sherita Grinter for her support with this!" — sent after she iterated the Microsoft Power App based on his team's feedback, adding PTO/sick/holiday submissions and a self-service My History screen the same day she received the feedback. (All Hands built end-to-end) / "Very valuable work and excited for the insights. You rock — I appreciate you." (Power App analytics) / "Thank you Sherita! You rock." (All Hands same-day delivery)
 
-Melissa, Director HRBP, CoStar Group: "Can I just tell you how awesome these emails are. Thank YOU!" (weekly leadership recap)
+Director HRBP, CoStar Group: "Can I just tell you how awesome these emails are. Thank YOU!" (weekly leadership recap)
 
-Katie, Senior PM, CoStar Group: "She has a rare combination of strategic thinking and hands-on execution. Any organization would be incredibly fortunate to have her."
+Senior PM, CoStar Group: "She has a rare combination of strategic thinking and hands-on execution. Any organization would be incredibly fortunate to have her."
 
-Matthew, CoStar Group: "We are in awe of the work you have done — we want to learn how we might copy it for our team." (80 page knowledge management)
+Senior Manager Client Support, CoStar Group: "We are in awe of the work you have done — we want to learn how we might copy it for our team." (80 page knowledge management)
 
-Diony, Executive PMO, McKesson Enterprise: "Sherita is a true partner on the Enterprise team and I value her work, innovation, and opinion."
+Executive PMO, McKesson Enterprise: "Sherita is a true partner on the Enterprise team and I value her work, innovation, and opinion."
 
-Amanda, VP Enterprise Customer Strategy, McKesson: "Her contributions have inspired us to all think bigger and bolder."
+VP Enterprise Customer Strategy, McKesson: "Her contributions have inspired us to all think bigger and bolder."
 
-Sara, Capital One: "In almost every conversation she has a new idea to solve a problem or make a process smoother."
+Client Support, Capital One: "In almost every conversation she has a new idea to solve a problem or make a process smoother."
 
 AWARDS: McKesson Spotlight Award — SVP and Chief of Staff Recognition 2023-2025. NSC Content Award — 98% satisfaction, 1,500 reps. Best Social Customer Care in Finance — Incite Group 2016. 100% Associate Engagement Scores — back-to-back, Capital One 2018. Federal Reserve Bank of Richmond recruited her for VP Corporate Communications and Chief of Staff 2024.
 
@@ -228,12 +226,12 @@ Capital One — 9.5 years across 6 roles: Employer Brand Consultant + PMO Lead, 
 Keener Communications — Marketing and Communications Manager, 2005-2014
 Education: Virginia Commonwealth University B.S. Political Science / Marketing
 
-TECH STACK: Microsoft 365 (Copilot Studio, SharePoint, Power Apps, PowerBI, Teams, Forms, Lists), Staffbase, Vidyard, Highspot, Gong, Workday Learning, Salesforce, Slack, Claude, Claude Code, ChatGPT, Canva, Adobe CC, ClickUp.
+TECH STACK: Microsoft 365 (Copilot Studio, SharePoint, Power Apps, PowerBI, Teams, Forms, Lists), Google Suite, Staffbase, Vidyard, Highspot, Gong, Workday Learning, Salesforce, Slack, Claude, Claude Code, ChatGPT, Canva, Adobe CC, ClickUp.
 
 WHY HIRE HER:
 1. This agent is her portfolio. She built it herself in two days — system design, code, deployment. That is a demonstration of AI fluency, not a talking point about it.
 2. She deploys Microsoft Copilot in production. 38% adoption. She knows what it takes to get an enterprise to actually use Copilot, not just install it.
-3. She catches what no one else sees. At McKesson she brought a data integrity crisis to the SVP and President before anyone asked her to look. $2.3B retained. At Capital One she caught a channel conflict that would have failed 76,300 employees. At CoStar she diagnosed five structural failures in week one.
+3. She catches what no one else sees. At McKesson she brought a data integrity crisis to the SVP and President before anyone asked her to look. $2.3B retained. At Capital One she caught a channel conflict that would have failed 20,000 employees. At CoStar she diagnosed five structural failures in week one.
 4. Every testimonial is unsolicited. A Regional Director emailed the Head of Sales on a Sunday to document field behavior change. A Head of Sales adopted an entire All Hands program without edits.
 5. She builds the operating system. At every organization she has joined, she built the connective tissue that keeps everything from fragmenting. She does not wait to be handed a playbook.
 6. She has been a photographer and videographer since 2002. She does not need a production team to capture a story. She is the production team.
