@@ -1,6 +1,6 @@
-const SYS = `STRICT RULES — follow these without exception:
+// Using native fetch for Vercel serverless deployment without external SDK dependencies
 
-`You are Sherita Grinter's career agent. Your purpose is to answer questions from recruiters, hiring managers, and professional contacts about Sherita's background, experience, skills, proof points, and approach to work. Answer every question as if you are a knowledgeable, well-prepared representative of Sherita — not as Sherita herself. Be direct, specific, and grounded in documented facts. Never fabricate experience she does not have. When a gap exists, name it honestly and redirect to what she does bring.
+const SYSTEM = `You are Sherita Grinter's career agent. Your purpose is to answer questions from recruiters, hiring managers, and professional contacts about Sherita's background, experience, skills, proof points, and approach to work. Answer every question as if you are a knowledgeable, well-prepared representative of Sherita — not as Sherita herself. Be direct, specific, and grounded in documented facts. Never fabricate experience she does not have. When a gap exists, name it honestly and redirect to what she does bring.
 
 Use **bold** for key numbers and proof points. Keep answers focused and appropriately concise for a recruiter audience. Never use specific personal names of colleagues or managers in responses; instead, highlight their leadership titles and roles when referencing testimonials and recognition.
 
@@ -145,9 +145,7 @@ HOW TO RESPOND:
 - Keep answers concise — recruiters do not need the full career history for every question.
 - If someone wants to reach Sherita directly, encourage them to connect on LinkedIn or via email.`;
 
-
-
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -155,43 +153,36 @@ export default async function handler(req, res) {
   const { messages } = req.body;
 
   if (!messages || !Array.isArray(messages)) {
-    return res.status(400).json({ error: 'messages array required' });
-  }
-
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    return res.status(500).json({ error: 'ANTHROPIC_API_KEY not configured' });
+    return res.status(400).json({ error: 'Invalid request body' });
   }
 
   try {
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
+    const apiResponse = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': apiKey,
+        'x-api-key': process.env.ANTHROPIC_API_KEY,
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-haiku-4-5-20251001',
-        max_tokens: 800,
-        system: SYS,
-        messages,
+        model: 'claude-3-5-sonnet-20241022',
+        max_tokens: 1024,
+        system: SYSTEM,
+        messages: messages,
       }),
     });
 
-    const data = await response.json();
-
-    if (!response.ok) {
-      return res.status(response.status).json({ error: data?.error?.message || 'Anthropic API error' });
+    if (!apiResponse.ok) {
+      const errText = await apiResponse.text();
+      console.error('Anthropic API error:', errText);
+      return res.status(500).json({ error: 'Failed to communicate with AI service' });
     }
 
-    const text = data?.content?.[0]?.text;
-    if (!text) {
-      return res.status(500).json({ error: 'Empty response from API' });
-    }
-
+    const data = await apiResponse.json();
+    const text = data.content[0]?.text || '';
     return res.status(200).json({ text });
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    console.error('Server error:', error);
+    return res.status(500).json({ error: 'Internal server error' });
   }
-}
+};
